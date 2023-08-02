@@ -3,10 +3,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
-    <link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
+    <!-- <link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/> -->
     <title>Portfolio</title>
 </head>
 <body>
@@ -22,7 +22,6 @@
         </ul>
         </div>
     </header>
-
     <!-- Home section -->
     <section id="home" class="home" style="background: url(./assets/WhatsApp\ Image\ 2023-07-30\ at\ 10.34.10\ AM.jpeg);
     background-size: 40%;
@@ -31,8 +30,7 @@
         <div class="home-content">
             <h1>Hi, I'm Mehak</h1>
             <h3>Full Stack Developer</h3>
-            <p>Passionate and versatile full stack developer ready to  bring my creativity to projects 
-                that drive sucess and exceed expectations.</p>
+            <p>Passionate and versatile full stack developer ready to  bring my creativity to projects that drive sucess and exceed expectations.</p>
             <div class="btn-box">
                 <a href="https://drive.google.com/file/d/14prftLZEoTD4hYdL-8Kk-0IcjAJ1L7sz/view?usp=sharing">Download CV</a>
                 <a href="#">Hire Me</a>
@@ -44,7 +42,7 @@
             <a href="mailto: mehakkamboj53@gmail.com"><i class='bx bxl-gmail' ></i></a>
         </div>
     </section>
-    </hr>
+    <hr>
 
     <!-- About me Section -->
     <section id="about";>
@@ -62,6 +60,7 @@
                 </div>
             </div>
     </section>
+    <hr>
 
     <!-- Education Section start -->
     <section id="education">
@@ -84,35 +83,24 @@
         </li>
     </ul>
     </section>
+    <hr>
 
     <!-- skills section start -->
-    <section id="skills">
-        <h1 style="margin-left: 115px;">Skills</h1>
-        <div class="container">
-            <div class="row" style="display: flex; justify-content: center; flex-direction: column;">
-                <div class="col-md-6">
-                    <h3 class="progress-title">HTML5 - 60%</h3>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width:60%;"></div>
-                    </div>
-                    <h3 class="progress-title">CSS3 - 50%</h3>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-info progress-bar-striped active" style="width:50%;"></div>
-                    </div>
-
-                    <h3 class="progress-title">C++ - 65%</h3>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width:60%;"></div>
-                    </div>
-
-                    <h3 class="progress-title">JAVA- 70%</h3>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width:60%;"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="skills" style="background-color: rgb(245, 245, 245);;">
+        <h2 style="display: grid; align-content: center;
+        gap: 2rem;
+        padding: 2rem;
+        font-size: 1.5em">Skills</h2>
+        <div class="container" style="margin-left: 347px; width: 600px; padding-bottom: 80px;">
+            <!-- <h1>SkillBar</h1> -->
+            <div class="skillbar learning" data-skill="HTML5"></div>
+            <div class="skillbar basic" data-skill="CSS3"></div>
+            <div class="skillbar intermediate" data-skill="JAVA"></div>
+            <div class="skillbar advanced" data-skill="C++"></div>
+            <div class="skillbar expert" data-skill="MySQL"></div> 
+          </div>
     </section>
+    <hr>
 
     <!-- contact us  -->
     <section id="contact-me">
