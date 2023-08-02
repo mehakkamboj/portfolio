@@ -66,6 +66,8 @@ a.active {
     justify-content: end;
     margin-left: 95px;
 }
+
+/* Home */
 .home 
   {
     display: flex;
@@ -182,13 +184,14 @@ img{
 .container p {
     padding-left: 40px;
 }
+/* About */
 
 #about{
   background-size: 100vh;
 }
 
 .outer{
-  background: white;
+  background: rgb(245,245,245);
 }
 .main{
   margin-top: 70px;
@@ -219,10 +222,10 @@ img{
   margin-top: 10px;
 }
 
-
+/* Education */
 #education{
   --color: rgba(30, 30, 30);
-  --bgColor: rgba(245, 245, 245);
+  /* --bgColor: rgba(245, 245, 245); */
   min-height: 100vh;
   display: grid;
   align-content: center;
@@ -383,57 +386,52 @@ ul {
     }
   }
   
-  .credits {
-    margin-top: 1rem;
-    text-align: right;
-  }
-  .credits a {
-    color: var(--color);
-  }
 
-  .progress-title{
-    font-size: 18px;
-    font-weight: 700;
-    color: #1c2647;
-    margin: 0 0 10px;
-}
-.progress{
-    height: 30px;
-    background: #fff;
-    border-top: 5px solid #1c2647;
-    border-bottom: 5px solid #1c2647;
-    border-radius: 0;
-    margin-bottom: 25px;
-    overflow: visible;
-    position: relative;
-}
-.progress:before,
-.progress:after{
-    content: "";
-    width: 5px;
-    background: #1c2647;
-    position: absolute;
-    top: 0;
-    left: -5px;
-    bottom: 0;
-}
-.progress:after{
-    left: auto;
-    right: -5px;
-}
-.progress .progress-bar{
-    border: none;
-    box-shadow: none;
-    -webkit-animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
-    animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
-}
-@-webkit-keyframes animate-positive{
-    0%{ width: 0; }
-}
-@keyframes animate-positive{
-    0%{ width: 0; }
+/* Skill */
+.skillbar{
+  background-color: #e5e5e5;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  &::before{
+    content:  attr(data-skill); 
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  } 
+
+  &.learning::before{
+    width: calc(60% - 14px);
+    background: #9ac4e9;
+  }
+  &.basic::before{
+    width: calc(50% - 14px);
+    background: #71A8D9;
+  }
+  &.intermediate::before{
+    width: calc(70% - 14px);
+    background: #3981BF;
+  }
+  &.advanced::before{
+    width: calc(65% - 14px);
+    background: #175a93;
+  }
+  &.expert::before{
+    width: calc(60% - 14px);
+    background: #163A59;
+  }
 }
 
+/* Footer */
 footer {
   background-color: #111010;
 }
